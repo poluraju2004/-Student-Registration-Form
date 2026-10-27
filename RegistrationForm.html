@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form>
+        <h1>Student Registration Form </h1>
+        <label for="name">Full Name : </label>
+        <input type ="text" id="name" placeholder = "Enter Name" required >
+
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input type = "email" id="email" placeholder ="Enter Email" required>
+
+        <br><br>
+
+        <label for="password">Password : </label>
+        <input type = "password" id="password" placeholder =" Enter Password" required>
+
+        <br><br>
+
+        <label for="phnumber">Mobile Number:</label>
+        <input type="tel" id="phnumber" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" maxlength="10" required>
+
+        <br><br>
+
+        <label for="date">Date of Birth : </label>
+        <input type = "date" id="date" name = 'dob' required>
+
+        <br><br>
+
+        <p> Gender:</p>
+
+        <input type="radio" id="male" name = 'gender' value = 'Male' required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name = 'gender' value = 'Female' >
+        <label for="female">Female</label>
+        <input type="radio" id="other" name = 'gender' value = 'Other'>
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="select"> Select Course: </label>
+        <select id="select" name = 'Course' required>
+            <option value = "">-- Select Course --</option>
+            <option value = "AC">AC</option>
+            <option value = "BDA">BDA</option>
+            <option value = "AI">AI</option>
+            <option value = "ESD">ESD</option>
+            <option value = "VLSI">VLSI</option>
+            <option value = "HPC">HPC</option>
+            <option value = "ASSD">ASSD</option>
+        </select>
+
+        <br> <br>
+
+        <p >Skills:</p>
+
+        <input type = 'checkbox' id="Html" name="skills" value ="html">
+        <label for="Html">HTML</label>
+        <input type = 'checkbox' id="Css"  name="skills" value ="css">
+        <label for="Css">CSS</label>
+        <input type = 'checkbox' id="Javascript" name="skills" value ="javascript">
+        <label for="Javascript">JAVASCRIPT</label>
+        <input type = 'checkbox' id="Java" name="skills" value ="java">
+        <label for="Java">JAVA</label>
+
+        <br><br>
+
+        <p>Address:</p>
+        <textarea rows = "5" cols="40" style="resize:none;" placeholder = "Enter your Address"  required></textarea>
+
+        <br><br>
+
+        <input type = "checkbox" id="check" name="confirmation"value="checked">
+        <label for="check"> I confirm that the details are correct.</label>
+
+        <br><br>
+
+        <button type = "submit"> Register</button>
+        <button type = "reset"> Clear</button>
+    </form>
+</body>
+</html>
